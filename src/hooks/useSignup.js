@@ -15,7 +15,7 @@ export const useSignup = () => {
         setError(null)
         createUserWithEmailAndPassword(auth, email, password)
         .then((res) => {
-            console.log("user signed up: ", res.user)
+            console.log('user signed up:', res.user)
         } )
         .catch((err) => {
             setError(err.message)
